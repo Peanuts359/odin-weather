@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="searchbar">
+        <input type="text" placeholder="Enter a location..." />
+        <button type="button">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </div>
+      <div class="weather">
+        <div class="today">
+          <div class="details">
+            <h1 id="city"></h1>
+            <h2 id="region"></h2>
+            <p id="condition"></p>
+          </div>
+          <div id="temperature"></div>
+          <img id="icon" src="" alt="weather icon" />
+        </div>
+        <div class="week"></div>
+      </div>
+      <div id="photo-credit"></div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: main;
+    src: url(assets/IndieFlower-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: main, 'Helvetica', 'Arial', 'Roboto', sans-serif;
+}
+
+body {
+    color: white;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.searchbar {
+    position: relative;
+    display: flex;
+}
+
+.weather {
+    width: 80vw;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid 1px white;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    backdrop-filter: blur(4px);
+  }
+  
+.today {
+    display: flex;
+    align-items: center;
+    .details {
+      flex: auto;
+    }
+    temperature {
+      font-size: 3em;
+      font-weight: 700;
+      min-width: fit-content;
+    }
+    img {
+      object-fit: contain;
+      margin-inline: 10px;
+    }
+  }
+  
+  input {
+    color: white;
+    width: 300px;
+    height: 40px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    backdrop-filter: blur(5px);
+    padding-left: 1em;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+    }
+  }
+  
+  button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    color: white;
+  }
+  
+  a {
+    color: white;
+    font-size: 12px;
+  }
+  
+  .week {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 70px;
+    }
+  }
